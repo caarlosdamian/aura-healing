@@ -8,23 +8,23 @@
   font-family: $font-family-novecento;
   padding: 20px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 11px;
+  font-weight: $font-weight-700;
+  font-size: $font-size-20;
+  line-height: $line-height-15;
   text-align: center;
   letter-spacing: 1.36364px;
   color: #d5b9a7;
   transition: all ease-in 0.3s;
   min-width: 148px;
-
+  text-decoration: none;
   &:hover {
-    background: #36563d;
-    color: white;
-    border: 1px solid white;
+    background: $primary-color;
+    color: $white;
+    border: 1px solid $white;
   }
 
   @include for-size(tablet-portrait-up) {
-    font-size: 14px;
+    font-size: $font-size-14;
     padding: 12px;
   }
 }

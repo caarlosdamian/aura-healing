@@ -17,9 +17,13 @@ export const Header = () => {
       />
 
       <nav className="nav-container">
-        <span className="navItem">Productos</span>
-        <span className="navItem">Contacto</span>
-        <Button label="Paquetes" onClick={() => console.log("hola")} />
+        <a  href="#productos" className="navItem">Productos</a>
+        <a  href="#contacto" className="navItem">Contacto</a>
+        <Button
+          href="#paquetes"
+          label="Paquetes"
+          onClick={() => setisOpen(false)}
+        />
       </nav>
       {isOpen && (
         <div className="menu-container">
@@ -37,7 +41,11 @@ export const Header = () => {
           >
             CONTACTO
           </a>
-          <button className="menu-button button">PAQUETES</button>
+          <Button
+            href="#paquetes"
+            label="PAQUETES"
+            onClick={() => setisOpen(false)}
+          />
         </div>
       )}
     </header>
