@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "aura-Book"; /*Can be any text*/
+  font-family: "aura-book"; /*Can be any text*/
   src: local("Synthview"), url("../fonts/Synthview-Book.otf") format("truetype");
 }
 @font-face {
@@ -14,14 +14,16 @@
 }
 
 $font-family-demi: "aura-demiBold";
-$font-family-book: "aura-demiBold";
+$font-family-book: "aura-book";
 $font-family-novecento: "novecento";
 
 
+$font-size-48: 40px;
 $font-size-40: 40px;
 $font-size-32: 32px;
 $font-size-20: 20px;
 $font-size-18: 18px;
+$font-size-16: 16px;
 $font-size-15: 15px;
 $font-size-14: 14px;
 
@@ -31,6 +33,7 @@ $font-weight-700: 700;
 $font-weight-400: 400;
 
 
+$line-height-48: 48px;
 $line-height-40: 40px;
 $line-height-32: 32px;
 $line-height-26: 26px;
@@ -39,6 +42,10 @@ $line-height-15: 15px;
 $line-height-11: 11px;
 
 $primary-color: #36563d;
+$primary-color-80: rgba(54, 86, 61,80%);
+$primary-color-60: rgba(54, 86, 61,60%);
+$primary-color-40: rgba(54, 86, 61,40%);
+$primary-color-20: rgba(54, 86, 61,20%);
 $secondary-color: #d5b9a7;
 $white: white;
 

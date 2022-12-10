@@ -1,8 +1,9 @@
-import "./Header.scss";
 import Hambuerger from "../../images/icon-hamburger.svg";
 import Logo from "../../images/aura.png";
 import { useState } from "react";
 import { Button } from "../../components/";
+import EyeIcon from "../../images/eye-img.png";
+import "./Header.scss";
 
 export const Header = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -17,8 +18,12 @@ export const Header = () => {
       />
 
       <nav className="nav-container">
-        <a  href="#productos" className="navItem">Productos</a>
-        <a  href="#contacto" className="navItem">Contacto</a>
+        <a href="#productos" className="navItem">
+          Productos
+        </a>
+        <a href="#contacto" className="navItem">
+          Contacto
+        </a>
         <Button
           href="#paquetes"
           label="Paquetes"
@@ -27,6 +32,8 @@ export const Header = () => {
       </nav>
       {isOpen && (
         <div className="menu-container">
+          <img src={EyeIcon} alt="EyeIcon" className="hero-img-bottom" />
+
           <a
             onClick={() => setisOpen(false)}
             href="#productos"

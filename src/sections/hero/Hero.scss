@@ -1,1 +1,86 @@
 @import "../../tokens/index.scss";
+
+.hero-container {
+  align-items: center;
+  background: $primary-color-40;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100%;
+  justify-content: center;
+
+  @include for-size(tablet-portrait-up) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 600px;
+    padding: 50px;
+    position: relative;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    padding: 165px;
+  }
+  .hero-img {
+    min-width: 100vw;
+    object-fit: cover;
+
+    @include for-size(tablet-portrait-up) {
+      max-height: 400px;
+      max-width: 350px;
+      min-width: 540px;
+      position: absolute;
+      right: 0;
+      top: 105px;
+    }
+
+    @include for-size(desktop-up) {
+      max-height: 650px;
+      max-width: 540px;
+      right: 5%;
+      top: 105px;
+    }
+  }
+
+  .hero-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    padding: 0 24px 93px 24px;
+
+    @include for-size(tablet-portrait-up) {
+      max-width: 540px;
+      padding: 0;
+    }
+
+    .hero-title {
+      color: #ffffff;
+      font-family: $font-family-book;
+      font-size: $font-size-48;
+      font-style: normal;
+      font-weight: $font-weight-400;
+      letter-spacing: -0.666667px;
+      line-height: $line-height-48;
+      text-align: center;
+
+      @include for-size(tablet-portrait-up) {
+        text-align: start;
+      }
+    }
+    .hero-subtitle {
+      color: #ffffff;
+      font-family: $font-family-book;
+      font-size: $font-size-16;
+      font-style: normal;
+      font-weight: $font-weight-400;
+      line-height: $line-height-26;
+      text-align: center;
+
+      @include for-size(tablet-portrait-up) {
+        text-align: start;
+      }
+    }
+  }
+}
