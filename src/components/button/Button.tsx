@@ -1,8 +1,11 @@
-import React from 'react'
-import './Button.scss'
+import React from "react";
+import "./Button.scss";
 
-export const Button = () => {
-  return (
-   <button></button>
-  )
+interface IButn {
+  label: string;
+  onClick: any;
 }
+
+export const Button = ({ label, onClick }: IButn) => {
+  return <button className="button" >{label}</button>;
+};

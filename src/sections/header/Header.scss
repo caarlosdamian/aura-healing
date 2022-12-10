@@ -8,9 +8,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all ease-in-out 3s;
+  transition: all ease-in-out 0.5s;
   position: fixed;
-  
+
   @include for-size(tablet-portrait-up) {
     position: sticky;
   }

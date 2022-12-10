@@ -2,6 +2,7 @@ import "./Header.scss";
 import Hambuerger from "../../images/icon-hamburger.svg";
 import Logo from "../../images/aura.png";
 import { useState } from "react";
+import { Button } from "../../components/";
 
 export const Header = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -18,7 +19,7 @@ export const Header = () => {
       <nav className="nav-container">
         <span className="navItem">Productos</span>
         <span className="navItem">Contacto</span>
-        <button className="menu-button button">PAQUETES</button>
+        <Button label="Paquetes" onClick={() => console.log("hola")} />
       </nav>
       {isOpen && (
         <div className="menu-container">
