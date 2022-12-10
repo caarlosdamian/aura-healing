@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "aura-demiBold"; /*Can be any text*/
+  src: local("Synthview"),
+    url("../fonts/Synthview-DemiBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "aura-Book"; /*Can be any text*/
+  src: local("Synthview"), url("../fonts/Synthview-Book.otf") format("truetype");
+}
+@font-face {
+  font-family: "novecento"; /*Can be any text*/
+  src: local("Novecento"), url("../fonts/Novecento-normal.otf") format("truetype");
+}
+
+$font-family-demi: "aura-demiBold";
+$font-family-book: "aura-demiBold";
+$font-family-novecento: "novecento";
+
+$primary-color: #36563d;
+
+
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
