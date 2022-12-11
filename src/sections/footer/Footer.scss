@@ -1,1 +1,100 @@
 @import "../../tokens/index.scss";
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 72px 24px;
+  @include for-size(tablet-portrait-up) {
+    padding: 64px 165px;
+  }
+
+  .footer-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    @include for-size(tablet-portrait-up) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .footer-logo {
+    width: 128px;
+  }
+  .footer-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .social-img {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+    }
+  }
+
+  .footer-line {
+    width: 100%;
+    background: #dadada;
+    border: none;
+    height: 1px;
+  }
+
+  .footer-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    @include for-size(tablet-portrait-up) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+    .footer-content-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 36px;
+
+      .footer-content-title {
+        font-family: $font-family-book;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        color: $primary-color;
+      }
+      .footer-container-inner-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+
+        .footer-content {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 15px;
+          text-align: center;
+          letter-spacing: 1.5px;
+          font-family: $font-family-book;
+          color: #2d2641;
+        }
+      }
+    }
+  }
+}
