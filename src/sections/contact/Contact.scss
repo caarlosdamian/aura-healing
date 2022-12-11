@@ -1,0 +1,91 @@
+@import "../../tokens/index.scss";
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 120px 24px;
+
+  @include for-size(tablet-portrait-up) {
+    .contact-container {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+
+    .contact-wrapper {
+      width: 1110px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 70px 80px;
+      overflow: hidden;
+    }
+
+    .contact-title {
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.777778px;
+      color: white;
+      text-align: start;
+      max-width: 475px;
+    }
+
+    .contact-img {
+      right: -150px;
+      object-fit: cover;
+      top: 0;
+      transform: rotate(225deg);
+      z-index: 1;
+    }
+
+    .contact-button {
+      z-index: 10;
+      position: sticky;
+    }
+  }
+}
+
+.contact-wrapper {
+  height: 344px;
+  width: 327px;
+  background: $primary-color-40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+  padding: 72px 24px;
+}
+
+.contact-img {
+  height: 344px;
+  width: 327px;
+  position: absolute;
+  top: 300px;
+  right: 0;
+  z-index: 2;
+}
+.contact-title {
+  font-family: $font-family-book;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.555556px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.contact-button {
+  padding: 12px;
+  width: 160px;
+  color: #ffffff !important;
+  border-color: white !important;
+  background: $primary-color-60 !important;
+  &:hover {
+    background: $primary-color-20 !important;
+  }
+}

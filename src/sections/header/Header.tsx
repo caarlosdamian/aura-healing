@@ -21,7 +21,7 @@ export const Header = () => {
         <a href="#productos" className="navItem">
           Productos
         </a>
-        <a href="#contacto" className="navItem">
+        <a href="#contact" className="navItem">
           Contacto
         </a>
         <Button
