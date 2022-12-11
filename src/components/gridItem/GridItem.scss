@@ -1,0 +1,11 @@
+@import "../../tokens/index.scss";
+
+.img-feat-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+  width: 86px;
+  background: $primary-color-60;
+  border-radius: 50%;
+}

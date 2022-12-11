@@ -1,1 +1,78 @@
 @import "../../tokens/index.scss";
+
+.features-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 140px 24px;
+  @include for-size(tablet-portrait-up) {
+    margin-top: 150px;
+  }
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-line {
+  height: 1px;
+  width: 150px;
+  background: #f2f2f2;
+  align-self: center;
+}
+
+.feature-header {
+  font-family: $font-family-book;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.666667px;
+  color: #2c2830;
+  margin-bottom: 40px;
+}
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  @include for-size(tablet-portrait-up) {
+    flex-direction: row;
+  }
+}
+
+.feature-img {
+  height: 50px;
+  width: 50px;
+}
+
+.feature-title {
+  font-family: $font-family-book;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.388889px;
+  color: #2c2830;
+}
+
+.feature-description {
+  font-family: $font-family-book;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #837d88;
+}
