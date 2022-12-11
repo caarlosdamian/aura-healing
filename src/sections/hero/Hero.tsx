@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useWindowSize } from "../../hooks/useWindowResize";
 import HeroImgMobile from "../../images/hero-img-mobile.png";
 import HeroImgDestop from "../../images/hero-section-desktop.svg";
@@ -14,6 +13,7 @@ export const Hero = () => {
         alt="hero-img"
         className="hero-img"
       />
+      <hr  className="hero-line"/>
       <div className="hero-content">
         <h1 className="hero-title">Lorem ipsum, dolor sit amet.</h1>
         <h3 className="hero-subtitle">

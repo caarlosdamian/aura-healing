@@ -10,12 +10,13 @@
   justify-content: center;
 
   @include for-size(tablet-portrait-up) {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: flex-start;
     min-height: 600px;
     padding: 50px;
     position: relative;
+    flex-direction: column;
   }
 
   @include for-size(tablet-portrait-up) {
@@ -42,6 +43,17 @@
     }
   }
 
+  .hero-line {
+    display: none;
+    border: none;
+    @include for-size(tablet-portrait-up) {
+      width: 150px;
+      height: 1px;
+      background: white;
+      display: block;
+    }
+  }
+
   .hero-content {
     align-items: center;
     display: flex;
@@ -52,6 +64,7 @@
 
     @include for-size(tablet-portrait-up) {
       max-width: 540px;
+      margin-top: 50px;
       padding: 0;
     }
 
