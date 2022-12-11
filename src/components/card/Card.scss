@@ -1,0 +1,91 @@
+@import "../../tokens/index.scss";
+
+.card-container {
+  width: 326px;
+  height: 454px;
+  background: $primary-color-40;
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .card-title {
+    font-family: $font-family-book;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+  }
+  .card-price {
+    font-family: $font-family-book;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 71px;
+    letter-spacing: -2.16px;
+    color: $primary-color;
+
+    strong {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      text-align: center;
+      letter-spacing: -1.2px;
+    }
+  }
+  .card-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 123px;
+    margin-top: 10px;
+    .card-details-item {
+      padding: 12px;
+      width: 100%;
+      border-bottom: 1px solid white;
+      font-family: $font-family-book;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: white;
+
+      &:nth-child(1) {
+        border-top: 1px solid white;
+      }
+    }
+  }
+
+  .card-button {
+    background: $primary-color-40;
+    border-radius: 6px;
+    padding: 14px;
+    width: 100%;
+    font-family: $font-family-book;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.39286px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      background: $primary-color-20;
+      border: 1px solid white;
+    }
+  }
+}

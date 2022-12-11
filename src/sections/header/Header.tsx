@@ -18,14 +18,14 @@ export const Header = () => {
       />
 
       <nav className="nav-container">
-        <a href="#productos" className="navItem">
+        <a href="#services" className="navItem">
           Productos
         </a>
         <a href="#contact" className="navItem">
           Contacto
         </a>
         <Button
-          href="#paquetes"
+          href="#pakages"
           label="Paquetes"
           onClick={() => setisOpen(false)}
         />
@@ -36,7 +36,7 @@ export const Header = () => {
 
           <a
             onClick={() => setisOpen(false)}
-            href="#productos"
+            href="#services"
             className="menu-option"
           >
             PRODUCTOS
@@ -49,7 +49,7 @@ export const Header = () => {
             CONTACTO
           </a>
           <Button
-            href="#paquetes"
+            href="#pakages"
             label="PAQUETES"
             onClick={() => setisOpen(false)}
           />
