@@ -6,7 +6,7 @@ export const Services = () => {
   return (
     <section id="services" className="features-container">
       <div className="feature-line"></div>
-      <h1 className="feature-header">We’re different</h1>
+      <h1 className="feature-header">Servicios</h1>
       <div className="features-wrapper">
         {featureData.map((item, key) => (
           <GridItem

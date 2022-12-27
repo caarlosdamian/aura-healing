@@ -4,21 +4,21 @@ import Piedra from '../images/piedra.png'
 
 export const featureData = [
     {
-     title: "Snappy Process",
+     title: "Theta healing",
      img: Piedra,
      description:
-      "Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.",
+      "Con theta healing se pretende desarrollar la intuición natural a través del cambio del ciclo de ondas cerebrales a ondas theta con la intención de explorar cómo la energía emocional afecta la salud de una persona.",
     },
     {
-     title: "Affordable Prices",
+     title: "Barras de access",
      img: Eye,
      description:
-      "We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.",
+      "Que puede pasar al recibir una sesión de barras? La ciencia dice: la forma de las células se vuelve elíptica al ser impactada con la energía de los sentimientos y emociones, lo cual es el primer paso hacia la enfermedad.",
     },
     {
-     title: "People First",
+     title: "Amuletos",
      img: Cuarzo,
      description:
-      "Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.",
+      "Los amuletos son algunos de los objetos más antiguos de la humanidad, ya que el hombre vio en ellos la forma para escapar de los males que lo aquejaban, fuesen físicos, morales o espirituales.",
     },
    ];
