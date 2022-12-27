@@ -8,8 +8,8 @@ export const Contact = () => {
       <div className="contact-wrapper">
         <div className="contact-img"></div>
         <img src={Pattern} alt="Pattern" className="contact-img" />
-        <div className="contact-title">Find out more about how we contact</div>
-        <button className="contact-button button">Contact</button>
+        <div className="contact-title">Contactanos para mas informacion.</div>
+        <button className="contact-button button">Contactanos</button>
       </div>
     </section>
   );
