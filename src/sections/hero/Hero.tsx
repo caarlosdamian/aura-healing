@@ -15,12 +15,9 @@ export const Hero = () => {
       />
       <hr  className="hero-line"/>
       <div className="hero-content">
-        <h1 className="hero-title">Lorem ipsum, dolor sit amet.</h1>
+        <h1 className="hero-title">Terapias de sanacion energetica.</h1>
         <h3 className="hero-subtitle">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          numquam libero dolorum molestias! Sapiente sed temporibus rem eius
-          beatae. Quaerat, culpa ut? Atque quas unde, voluptatibus fuga eaque
-          obcaecati inventore?
+        La terapia energética es una técnica que consiste en eliminar la memoria celular a través de la energía humana promoviendo la salud, el balance y la relajación. Esta terapia se basa en la conexión entre el cuerpo y la mente, así como entre nuestras emociones y nuestro espíritu y la influencia que todo ello tiene en nuestras vidas.
         </h3>
       </div>
     </section>
