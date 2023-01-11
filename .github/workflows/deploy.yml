@@ -27,6 +27,8 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Run build
+        env:
+          CI: false
         run: |
           npm ci
           npm run build
