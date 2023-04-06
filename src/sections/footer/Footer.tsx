@@ -30,7 +30,7 @@ export const Footer = () => {
               {/* <img src={Instagram} alt="Instagram" className="social-img" /> */}
             <span className="footer-content">Instagram</span>
             </a>
-            <span className="footer-content">Tel: 3314576872</span>
+            <span className="footer-content">Tel: 2216647189</span>
           </div>
         </div>
         <div className="footer-content-wrapper">
